@@ -2,8 +2,10 @@ import serial
 import pyautogui
 import time
 
+PORT = "COM4"
+
 try:
-	arduino = serial.Serial("COM4", timeout=1)
+	arduino = serial.Serial(PORT, timeout=1)
 except:
 	print("Please check the port")
 
